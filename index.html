@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ambassador Web3 Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: #0e0e0e;
+      color: #fff;
+    }
+    header {
+      background: linear-gradient(135deg, #0fffc1, #3e6cff);
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #1a1a1a;
+      padding: 1rem;
+    }
+    nav a {
+      color: #0fffc1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 3rem;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: #121212;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #bbb;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .project {
+      background: #1f1f1f;
+      padding: 1.5rem;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .project:hover {
+      transform: scale(1.05);
+    }
+    .project h3 {
+      color: #0fffc1;
+      margin-bottom: 1rem;
+    }
+    .socials {
+      text-align: center;
+    }
+    .socials a {
+      margin: 0 1rem;
+      font-size: 2rem;
+      color: #3e6cff;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1a1a1a;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>perpzx</h1>
+    <p>WEB3 AMBASSADOR </p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero" id="about">
+    <h2>Welcome to My Decentralized World</h2>
+    <p>
+      I am passionate about blockchain technology, DAOs, NFTs, and DeFi. With extensive experience in
+      community building, protocol research, and project collaboration in the Web3 space.
+    </p>
+  </section>
+  <section id="projects">
+    <h2>Projects & Contributions</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>DAO Management</h3>
+        <p>Led initiatives in decentralized governance platforms such as Aragon and Snapshot for multiple DAOs.</p>
+      </div>
+      <div class="project">
+        <h3>NFT Curation</h3>
+        <p>Curated and promoted NFT collections, collaborated with artists, and developed community engagement strategies.</p>
+      </div>
+      <div class="project">
+        <h3>Blockchain Education</h3>
+        <p>Hosted online webinars, published blog posts, and created educational content to onboard users into Web3.</p>
+      </div>
+    </div>
+  </section>
+  <section class="socials" id="contact">
+    <h2>Let's Connect</h2>
+    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+  </section>
+  <footer>
+    &copy; 2025 Your Name. Powered by decentralized dreams.
+  </footer>
+</body>
+</html>
