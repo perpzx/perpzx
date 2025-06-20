@@ -3,9 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>perpzx</title>
+  <title>Web3 Portfolio - perpzx</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
+    :root {
+      --primary-dark: #0a0a0a;
+      --accent-blue: #00bcd4;
+      --accent-green: #4caf50;
+      --text-light: #e0e0e0;
+      --card-bg: #161616;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -13,62 +21,98 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     body {
-      background: #0e0e0e;
-      color: #fff;
+      background: var(--primary-dark);
+      color: var(--text-light);
     }
     header {
-      background: linear-gradient(135deg, #0fffc1, #3e6cff);
-      padding: 2rem;
+      padding: 3rem 2rem 2rem;
       text-align: center;
+      background: #101010;
+      border-bottom: 2px solid var(--accent-blue);
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent-green);
+      margin-bottom: 1rem;
     }
     header h1 {
-      font-size: 3rem;
+      font-size: 2.8rem;
+      color: var(--accent-blue);
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #cccccc;
     }
     nav {
+      margin-top: 1.5rem;
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      background-color: #1a1a1a;
-      padding: 1rem;
+      gap: 1.5rem;
+      flex-wrap: wrap;
     }
     nav a {
-      color: #0fffc1;
+      color: var(--text-light);
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      padding: 0.5rem 1.5rem;
+      border: 2px solid var(--accent-blue);
+      border-radius: 25px;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      background-color: var(--accent-blue);
+      color: #000;
     }
     section {
-      padding: 3rem;
+      padding: 4rem 2rem;
     }
     .hero {
       text-align: center;
-      padding: 4rem 2rem;
-      background-color: #121212;
     }
     .hero h2 {
-      font-size: 2.5rem;
+      font-size: 3rem;
+      color: var(--accent-green);
       margin-bottom: 1rem;
     }
     .hero p {
       font-size: 1.2rem;
-      color: #bbb;
+      color: #bbbbbb;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    #projects h2,
+    #contact h2 {
+      text-align: center;
+      color: var(--accent-blue);
+      margin-bottom: 2rem;
+      font-size: 2.4rem;
     }
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
     }
     .project {
-      background: #1f1f1f;
-      padding: 1.5rem;
-      border-radius: 10px;
-      transition: transform 0.3s;
+      background: var(--card-bg);
+      padding: 1.8rem;
+      border-radius: 12px;
+      border: 1px solid var(--accent-blue);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .project:hover {
-      transform: scale(1.05);
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0, 188, 212, 0.2);
     }
     .project h3 {
-      color: #0fffc1;
-      margin-bottom: 1rem;
+      color: var(--accent-green);
+      margin-bottom: 0.8rem;
+    }
+    .project p {
+      color: #d0d0d0;
     }
     .socials {
       text-align: center;
@@ -76,59 +120,72 @@
     .socials a {
       margin: 0 1rem;
       font-size: 2rem;
-      color: #3e6cff;
+      color: var(--accent-blue);
+      transition: color 0.3s;
+    }
+    .socials a:hover {
+      color: var(--accent-green);
     }
     footer {
       text-align: center;
       padding: 2rem;
-      background-color: #1a1a1a;
-      color: #aaa;
+      background-color: #111;
+      color: #888;
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="photo_2025-06-21_05-54-04.jpg" alt="Profile Picture" class="profile-pic">
     <h1>perpzx</h1>
-    <p>WEB3 AMBASSADOR </p>
+    <p>Web3 & Blockchain Ambassador</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+
   <section class="hero" id="about">
     <h2>Welcome to My Decentralized World</h2>
     <p>
-      I am passionate about blockchain technology, DAOs, NFTs, and DeFi. With extensive experience in
-      community building, protocol research, and project collaboration in the Web3 space.
+      I explore the frontier of Web3: DAOs, NFTs, DeFi, and decentralized identity. Bridging technology and communities with clarity and passion.
     </p>
   </section>
+
   <section id="projects">
-    <h2>Projects & Contributions</h2>
+    <h2>My Projects</h2>
     <div class="projects">
       <div class="project">
-        <h3>DAO Management</h3>
-        <p>Led initiatives in decentralized governance platforms such as Aragon and Snapshot for multiple DAOs.</p>
+        <h3>Wallet Explorer</h3>
+        <p>A lightweight EVM-based wallet tracker that visualizes transaction histories, token balances, and real-time price updates.</p>
       </div>
       <div class="project">
-        <h3>NFT Curation</h3>
-        <p>Curated and promoted NFT collections, collaborated with artists, and developed community engagement strategies.</p>
+        <h3>Launchpad X</h3>
+        <p>Web3 launchpad system for NFT creators and communities with whitelisting, minting dashboard, and IPFS integration.</p>
       </div>
       <div class="project">
-        <h3>Blockchain Education</h3>
-        <p>Hosted online webinars, published blog posts, and created educational content to onboard users into Web3.</p>
+        <h3>ChainLearn ID</h3>
+        <p>An educational hub offering curated crypto content, quizzes, and certification through on-chain proof-of-attendance.</p>
+      </div>
+      <div class="project">
+        <h3>DAO Contributor Tools</h3>
+        <p>Custom Notion-style tooling to support bounty tracking, contributor onboarding, and proposal workflows inside DAOs.</p>
       </div>
     </div>
   </section>
+
   <section class="socials" id="contact">
     <h2>Let's Connect</h2>
-    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
     <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
   </section>
+
   <footer>
-    &copy; 2025 Your Name. Powered by decentralized dreams.
+    &copy; 2025 perpzx. Empowered by decentralization.
   </footer>
 </body>
 </html>
+
