@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web3 Portfolio - perpzx</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    :root {
+      --primary-dark: #0a0a0a;
+      --accent-blue: #00bcd4;
+      --accent-green: #4caf50;
+      --text-light: #e0e0e0;
+      --card-bg: #161616;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: var(--primary-dark);
+      color: var(--text-light);
+    }
+    header {
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+      background: #101010;
+      border-bottom: 2px solid var(--accent-blue);
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent-green);
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: var(--accent-blue);
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #cccccc;
+    }
+    nav {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem 1.5rem;
+      border: 2px solid var(--accent-blue);
+      border-radius: 25px;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      background-color: var(--accent-blue);
+      color: #000;
+    }
+    section {
+      padding: 4rem 2rem;
+    }
+    .hero {
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      color: var(--accent-green);
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #bbbbbb;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    #projects h2,
+    #contact h2 {
+      text-align: center;
+      color: var(--accent-blue);
+      margin-bottom: 2rem;
+      font-size: 2.4rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .project {
+      background: var(--card-bg);
+      padding: 1.8rem;
+      border-radius: 12px;
+      border: 1px solid var(--accent-blue);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0, 188, 212, 0.2);
+    }
+    .project h3 {
+      color: var(--accent-green);
+      margin-bottom: 0.8rem;
+    }
+    .project p {
+      color: #d0d0d0;
+    }
+    .socials {
+      text-align: center;
+    }
+    .socials a {
+      margin: 0 1rem;
+      font-size: 2rem;
+      color: var(--accent-blue);
+      transition: color 0.3s;
+    }
+    .socials a:hover {
+      color: var(--accent-green);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #111;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+    <h1>perpzx</h1>
+    <p>Web3 & Blockchain Ambassador</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="about">
+    <h2>Welcome to My Decentralized World</h2>
+    <p>
+      I explore the frontier of Web3: DAOs, NFTs, DeFi, and decentralized identity. Bridging technology and communities with clarity and passion.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects & Contributions</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>DAO Management</h3>
+        <p>Led decentralized governance for emerging protocols using Aragon and Snapshot. Advocated fair voting and contributor onboarding.</p>
+      </div>
+      <div class="project">
+        <h3>NFT Curation</h3>
+        <p>Coordinated NFT showcases, collaborated with creators, and grew social traction across marketplaces like Zora and OpenSea.</p>
+      </div>
+      <div class="project">
+        <h3>Education & Advocacy</h3>
+        <p>Created accessible content to onboard users into crypto and DeFi. Host of Twitter Spaces, Discord workshops, and YouTube explainers.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="socials" id="contact">
+    <h2>Let's Connect</h2>
+    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+  </section>
+
+  <footer>
+    &copy; 2025 perpzx. Empowered by decentralization.
+  </footer>
+</body>
+</html>
